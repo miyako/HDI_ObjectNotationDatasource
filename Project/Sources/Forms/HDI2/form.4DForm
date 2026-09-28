@@ -1,0 +1,1352 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 980,
+	"windowMinHeight": 770,
+	"width": 980,
+	"height": 770,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"TabControl": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 942,
+					"height": 728,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBox": {
+					"type": "listbox",
+					"top": 132,
+					"left": 40,
+					"width": 900,
+					"height": 147,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"headerHeight": "2em",
+					"table": 1,
+					"highlightSet": "$ListboxSet",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/ListBox.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "ColID",
+							"dataSource": "[Person:1]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 40,
+							"minWidth": 40,
+							"maxWidth": 40,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColCategory",
+							"dataSource": "[Person:1]Category:3",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "[Person]Category",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColFirstname",
+							"dataSource": "[Person:1]OB_Field:2.Firstname",
+							"width": 170,
+							"minWidth": 80,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "[Person]OB_Field.Firstname",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColLastname",
+							"dataSource": "[Person:1]OB_Field:2.Lastname",
+							"width": 170,
+							"minWidth": 80,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "[Person]OB_Field.Lastname",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColAge",
+							"dataSource": "[Person:1]OB_Field:2.Age",
+							"dataSourceTypeHint": "number",
+							"width": 150,
+							"minWidth": 40,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "[Person]OB_Field.Age",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "ColDate",
+							"dataSource": "[Person:1]OB_Field:2.RegisterDate",
+							"dataSourceTypeHint": "date",
+							"width": 235,
+							"minWidth": 100,
+							"maxWidth": 400,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "[Person]OB_Field.RegisterDate",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"VarTitle1": {
+					"type": "input",
+					"top": 65,
+					"left": 80,
+					"width": 820,
+					"height": 657,
+					"dataSource": "VarTitle1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable6": {
+					"type": "input",
+					"top": 379,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]Category:3",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 406,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Firstname",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 431,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Lastname",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var2": {
+					"type": "input",
+					"top": 431,
+					"left": 76,
+					"width": 250,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var1": {
+					"type": "input",
+					"top": 406,
+					"left": 76,
+					"width": 250,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 354,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]ID:1",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var6": {
+					"type": "input",
+					"top": 354,
+					"left": 76,
+					"width": 250,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var7": {
+					"type": "input",
+					"top": 379,
+					"left": 76,
+					"width": 250,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 378,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Age",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 404,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.City",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 430,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.RegisterDate",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var3": {
+					"type": "input",
+					"top": 379,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var4": {
+					"type": "input",
+					"top": 405,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var5": {
+					"type": "input",
+					"top": 431,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 546,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Name",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 571,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Age",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button": {
+					"type": "radio",
+					"top": 625,
+					"left": 336,
+					"width": 136,
+					"height": 19,
+					"dataSource": "[Person:1]OB_Field:2.Children[0].Sex=\"M\"",
+					"text": "Masculin",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 647,
+					"left": 336,
+					"width": 136,
+					"height": 19,
+					"dataSource": "[Person:1]OB_Field:2.Children[0].Sex=\"F\"",
+					"text": "Feminin",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"var16": {
+					"type": "input",
+					"top": 626,
+					"left": 40,
+					"width": 285,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var17": {
+					"type": "input",
+					"top": 648,
+					"left": 40,
+					"width": 285,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var10": {
+					"type": "input",
+					"top": 546,
+					"left": 40,
+					"width": 285,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var11": {
+					"type": "input",
+					"top": 572,
+					"left": 40,
+					"width": 285,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 598,
+					"left": 336,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Sex",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var18": {
+					"type": "input",
+					"top": 598,
+					"left": 40,
+					"width": 285,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 543,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Toy[0].Name",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 568,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Toy[0].Color",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 594,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Toy[1].Name",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 619,
+					"left": 804,
+					"width": 136,
+					"height": 17,
+					"dataSource": "[Person:1]OB_Field:2.Children[nChild].Toy[1].Color",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var12": {
+					"type": "input",
+					"top": 543,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var13": {
+					"type": "input",
+					"top": 569,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var14": {
+					"type": "input",
+					"top": 594,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"var15": {
+					"type": "input",
+					"top": 620,
+					"left": 494,
+					"width": 300,
+					"height": 17,
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"allowFontColorPicker": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button12": {
+					"type": "button",
+					"top": 697,
+					"left": 788,
+					"width": 70,
+					"height": 30,
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/action_save.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button13": {
+					"type": "button",
+					"top": 697,
+					"left": 870,
+					"width": 70,
+					"height": 30,
+					"focusable": false,
+					"text": "Reload",
+					"icon": "/RESOURCES/action_redo.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 301,
+					"left": 40,
+					"width": 900,
+					"stroke": "#696969"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 317,
+					"left": 45,
+					"width": 217,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Details on the selected person:"
+				},
+				"VarTitle2": {
+					"type": "input",
+					"top": 65,
+					"left": 40,
+					"width": 900,
+					"height": 33,
+					"dataSource": "VarTitle2",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"top": 493,
+					"left": 544,
+					"width": 30,
+					"height": 30,
+					"focusable": false,
+					"icon": "/RESOURCES/action_next.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"method": "ObjectMethods/Button14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "button",
+					"top": 493,
+					"left": 422,
+					"width": 30,
+					"height": 30,
+					"focusable": false,
+					"icon": "/RESOURCES/action_previous.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 500,
+					"left": 457,
+					"width": 81,
+					"height": 17,
+					"dataSource": "\"nChild= \"+String:C10(nChild)+\" / \"+String:C10(maxChild)",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 493,
+					"left": 45,
+					"width": 168,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Details on the children:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 337,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarExp1": {
+					"type": "input",
+					"top": 344,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp1",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarExp2": {
+					"type": "input",
+					"top": 371,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp2",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarExp3": {
+					"type": "input",
+					"top": 398,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp3",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 344,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Background color expression:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 371,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Style expression:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 398,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Font color expression:"
+				},
+				"VarExp4": {
+					"type": "input",
+					"top": 496,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp4",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarExp5": {
+					"type": "input",
+					"top": 523,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp5",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"VarExp6": {
+					"type": "input",
+					"top": 550,
+					"left": 250,
+					"width": 550,
+					"height": 17,
+					"dataSource": "VarExp6",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 496,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Background color expression:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 523,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Style expression:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 550,
+					"left": 39,
+					"width": 200,
+					"height": 17,
+					"textAlign": "right",
+					"fontFamily": "System Font",
+					"fontSize": 13,
+					"text": "Font color expression:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 321,
+					"left": 40,
+					"width": 67,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "List box:"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 337,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"top": 462,
+					"left": 107,
+					"width": 205,
+					"height": 23,
+					"dataSource": "arrColumn",
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 465,
+					"left": 40,
+					"width": 67,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Column:"
+				},
+				"Button4": {
+					"type": "button",
+					"top": 364,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 364,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 391,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 391,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 492,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 492,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 519,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button9": {
+					"type": "button",
+					"top": 519,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 546,
+					"left": 810,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Apply",
+					"icon": "/RESOURCES/action_validate.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 546,
+					"left": 880,
+					"width": 60,
+					"height": 30,
+					"focusable": false,
+					"text": "Reset",
+					"icon": "/RESOURCES/action_cancel.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "toolbar",
+					"textAlign": "left",
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"VarTitle3": {
+					"type": "input",
+					"top": 65,
+					"left": 40,
+					"width": 900,
+					"height": 33,
+					"dataSource": "VarTitle3",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Popup Dropdown List"
+			]
+		}
+	]
+}
