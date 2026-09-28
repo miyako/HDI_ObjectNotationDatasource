@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($name)
-C_LONGINT:C283($i)
+var $name : Text
+var $i : Integer
 For ($i; 1; Size of array:C274(arrColumn))
 	$name:=arrColumn{$i}
 	LISTBOX SET PROPERTY:C1440(*; "Col"+$name; lk background color expression:K53:47; "0x00FFFFFF")

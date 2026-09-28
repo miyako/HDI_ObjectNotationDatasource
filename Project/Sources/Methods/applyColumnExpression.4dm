@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284($name)
+var $name : Text
 $name:=arrColumn{arrColumn}
 
 If (VarExp4#"")

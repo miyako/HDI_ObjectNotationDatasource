@@ -48,7 +48,7 @@
 					"height": 12,
 					"sizingX": "move",
 					"dataSource": "vRecNum",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 9,
 					"focusable": false,
@@ -75,8 +75,8 @@
 					"width": 515,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
-					"text": "Sample"
+					"stroke": "automatic",
+					"text": ":xliff:TableForms_TitleSample"
 				},
 				"Line8": {
 					"type": "line",
@@ -225,7 +225,7 @@
 					"width": 86,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": ":xliff:TableForms_LabelID"
 				},
 				"Text10": {
 					"type": "text",
@@ -234,7 +234,7 @@
 					"width": 86,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Title : "
+					"text": ":xliff:TableForms_LabelTitle"
 				},
 				"Text11": {
 					"type": "text",
@@ -243,7 +243,7 @@
 					"width": 86,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Text : "
+					"text": ":xliff:TableForms_LabelText"
 				},
 				"Text12": {
 					"type": "text",
@@ -252,7 +252,7 @@
 					"width": 86,
 					"height": 17,
 					"textAlign": "right",
-					"text": "SampleSort : "
+					"text": ":xliff:TableForms_LabelSampleSort"
 				},
 				"ID": {
 					"type": "input",
@@ -290,7 +290,7 @@
 					"height": 17,
 					"dataSource": "[Samples:2]Title:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -317,7 +317,7 @@
 					"sizingY": "grow",
 					"dataSource": "[Samples:2]Text:3",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"showSelection": true,
 					"styledText": true,
@@ -345,7 +345,7 @@
 					"height": 17,
 					"dataSource": "[Samples:2]SampleSort:4",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",

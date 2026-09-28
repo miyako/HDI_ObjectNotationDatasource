@@ -58,7 +58,7 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": ":xliff:TableForms_LabelID"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +67,7 @@
 					"width": 400,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "OB_Field : "
+					"text": ":xliff:TableForms_LabelOBField"
 				},
 				"Rectangle4": {
 					"type": "rectangle",
@@ -76,6 +76,7 @@
 					"width": 536,
 					"height": 25,
 					"sizingX": "grow",
+					"fill": "automatic",
 					"stroke": "transparent"
 				},
 				"S1_Field": {
@@ -115,7 +116,7 @@
 					"sizingX": "grow",
 					"dataSource": "[Person:1]OB_Field:2",
 					"dataSourceTypeHint": "object",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -137,7 +138,7 @@
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-hairline"
 				},
 				"Line6": {
 					"type": "line",
@@ -145,14 +146,14 @@
 					"left": 536,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"class": "hdi-hairline"
 				},
 				"Line7": {
 					"type": "line",
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-hairline"
 				},
 				"Splitter2": {
 					"type": "splitter",

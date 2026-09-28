@@ -58,6 +58,9 @@
 					"height": 147,
 					"visibility": "hidden",
 					"resizingMode": "legacy",
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate",
 					"listboxType": "currentSelection",
 					"focusable": false,
 					"movableRows": false,
@@ -81,11 +84,9 @@
 							"width": 40,
 							"minWidth": 40,
 							"maxWidth": 40,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -110,11 +111,9 @@
 							"dataSource": "[Person:1]Category:3",
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -140,11 +139,9 @@
 							"width": 170,
 							"minWidth": 80,
 							"maxWidth": 200,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -170,11 +167,9 @@
 							"width": 170,
 							"minWidth": 80,
 							"maxWidth": 200,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -201,11 +196,9 @@
 							"width": 150,
 							"minWidth": 40,
 							"maxWidth": 200,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -232,11 +225,9 @@
 							"width": 235,
 							"minWidth": 100,
 							"maxWidth": 400,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
+							"truncateMode": "none",
 							"events": [
 								"onClick",
 								"onDataChange"
@@ -551,7 +542,7 @@
 					"width": 136,
 					"height": 19,
 					"dataSource": "[Person:1]OB_Field:2.Children[0].Sex=\"M\"",
-					"text": "Masculin",
+					"text": ":xliff:HDI2_RadioMale",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -564,7 +555,7 @@
 					"width": 136,
 					"height": 19,
 					"dataSource": "[Person:1]OB_Field:2.Children[0].Sex=\"F\"",
-					"text": "Feminin",
+					"text": ":xliff:HDI2_RadioFemale",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -816,9 +807,9 @@
 					"top": 697,
 					"left": 788,
 					"width": 70,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Save",
+					"text": ":xliff:BtnSave",
 					"icon": "/RESOURCES/action_save.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -834,9 +825,9 @@
 					"top": 697,
 					"left": 870,
 					"width": 70,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reload",
+					"text": ":xliff:BtnReload",
 					"icon": "/RESOURCES/action_redo.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -852,7 +843,7 @@
 					"top": 301,
 					"left": 40,
 					"width": 900,
-					"stroke": "#696969"
+					"class": "hdi-hairline"
 				},
 				"Text8": {
 					"type": "text",
@@ -861,7 +852,7 @@
 					"width": 217,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Details on the selected person:"
+					"text": ":xliff:HDI2_LabelDetailsPerson"
 				},
 				"VarTitle2": {
 					"type": "input",
@@ -886,7 +877,7 @@
 					"top": 493,
 					"left": 544,
 					"width": 30,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
 					"icon": "/RESOURCES/action_next.png",
 					"iconFrames": 4,
@@ -902,7 +893,7 @@
 					"top": 493,
 					"left": 422,
 					"width": 30,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
 					"icon": "/RESOURCES/action_previous.png",
 					"iconFrames": 4,
@@ -939,7 +930,7 @@
 					"width": 168,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Details on the children:"
+					"text": ":xliff:HDI2_LabelDetailsChildren"
 				}
 			}
 		},
@@ -950,9 +941,9 @@
 					"top": 337,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1009,7 +1000,7 @@
 					"width": 200,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Background color expression:"
+					"text": ":xliff:HDI2_LabelBgColorExpr"
 				},
 				"Text1": {
 					"type": "text",
@@ -1018,7 +1009,7 @@
 					"width": 200,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Style expression:"
+					"text": ":xliff:HDI2_LabelStyleExpr"
 				},
 				"Text2": {
 					"type": "text",
@@ -1027,7 +1018,7 @@
 					"width": 200,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Font color expression:"
+					"text": ":xliff:HDI2_LabelFontColorExpr"
 				},
 				"VarExp4": {
 					"type": "input",
@@ -1075,7 +1066,7 @@
 					"width": 200,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Background color expression:"
+					"text": ":xliff:HDI2_LabelBgColorExpr"
 				},
 				"Text4": {
 					"type": "text",
@@ -1084,7 +1075,7 @@
 					"width": 200,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Style expression:"
+					"text": ":xliff:HDI2_LabelStyleExpr"
 				},
 				"Text5": {
 					"type": "text",
@@ -1095,7 +1086,7 @@
 					"textAlign": "right",
 					"fontFamily": "System Font",
 					"fontSize": 13,
-					"text": "Font color expression:"
+					"text": ":xliff:HDI2_LabelFontColorExpr"
 				},
 				"Text6": {
 					"type": "text",
@@ -1104,16 +1095,16 @@
 					"width": 67,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "List box:"
+					"text": ":xliff:HDI2_LabelListBox"
 				},
 				"Button1": {
 					"type": "button",
 					"top": 337,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1143,16 +1134,16 @@
 					"width": 67,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Column:"
+					"text": ":xliff:HDI2_LabelColumn"
 				},
 				"Button4": {
 					"type": "button",
 					"top": 364,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1168,9 +1159,9 @@
 					"top": 364,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1186,9 +1177,9 @@
 					"top": 391,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1204,9 +1195,9 @@
 					"top": 391,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1222,9 +1213,9 @@
 					"top": 492,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1240,9 +1231,9 @@
 					"top": 492,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1258,9 +1249,9 @@
 					"top": 519,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1276,9 +1267,9 @@
 					"top": 519,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1294,9 +1285,9 @@
 					"top": 546,
 					"left": 810,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Apply",
+					"text": ":xliff:BtnApply",
 					"icon": "/RESOURCES/action_validate.png",
 					"iconFrames": 4,
 					"textPlacement": "right",
@@ -1312,9 +1303,9 @@
 					"top": 546,
 					"left": 880,
 					"width": 60,
-					"height": 30,
+					"class": "default",
 					"focusable": false,
-					"text": "Reset",
+					"text": ":xliff:BtnReset",
 					"icon": "/RESOURCES/action_cancel.png",
 					"iconFrames": 4,
 					"textPlacement": "right",

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI/form.4DForm" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="HDI_TitleHowDoI" resname="HDI_TitleHowDoI">
+		<source>How Do I...</source>
+		<target>How Do I...</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TitleObjectNotation" resname="HDI_TitleObjectNotation">
+		<source>… use the object notation in expression properties?</source>
+		<target>… use the object notation in expression properties?</target>
+	  </trans-unit>
+	  <trans-unit id="BtnDemo" resname="BtnDemo">
+		<source>Demo</source>
+		<target>Demo</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

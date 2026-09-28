@@ -3,7 +3,7 @@ Case of
 		
 		initHDI
 		
-		C_BOOLEAN:C305(bFirst)
+		var bFirst : Boolean
 		bFirst:=True:C214
 		
 		ARRAY TEXT:C222(arrColumn; 5)
@@ -14,7 +14,7 @@ Case of
 		arrColumn{5}:="Date"
 		arrColumn:=4
 		
-		C_LONGINT:C283(nChild)
+		var nChild : Integer
 		nChild:=0
 		
 	: (Form event code:C388=On Page Change:K2:54)
