@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="HDI2_RadioMale" resname="HDI2_RadioMale">
+		<source>Male</source>
+		<target>Male</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_RadioFemale" resname="HDI2_RadioFemale">
+		<source>Female</source>
+		<target>Female</target>
+	  </trans-unit>
+	  <trans-unit id="BtnSave" resname="BtnSave">
+		<source>Save</source>
+		<target>Save</target>
+	  </trans-unit>
+	  <trans-unit id="BtnReload" resname="BtnReload">
+		<source>Reload</source>
+		<target>Reload</target>
+	  </trans-unit>
+	  <trans-unit id="BtnApply" resname="BtnApply">
+		<source>Apply</source>
+		<target>Apply</target>
+	  </trans-unit>
+	  <trans-unit id="BtnReset" resname="BtnReset">
+		<source>Reset</source>
+		<target>Reset</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelDetailsPerson" resname="HDI2_LabelDetailsPerson">
+		<source>Details on the selected person:</source>
+		<target>Details on the selected person:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelDetailsChildren" resname="HDI2_LabelDetailsChildren">
+		<source>Details on the children:</source>
+		<target>Details on the children:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelBgColorExpr" resname="HDI2_LabelBgColorExpr">
+		<source>Background color expression:</source>
+		<target>Background color expression:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelStyleExpr" resname="HDI2_LabelStyleExpr">
+		<source>Style expression:</source>
+		<target>Style expression:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelFontColorExpr" resname="HDI2_LabelFontColorExpr">
+		<source>Font color expression:</source>
+		<target>Font color expression:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelListBox" resname="HDI2_LabelListBox">
+		<source>List box:</source>
+		<target>List box:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LabelColumn" resname="HDI2_LabelColumn">
+		<source>Column:</source>
+		<target>Column:</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

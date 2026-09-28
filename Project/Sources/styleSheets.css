@@ -1,0 +1,13 @@
+/* Cross-platform dark mode support. */
+
+@media (prefers-color-scheme: light) {
+	.hdi-hairline {
+		stroke: #A8A8A8;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-hairline {
+		stroke: #6E6E6E;
+	}
+}

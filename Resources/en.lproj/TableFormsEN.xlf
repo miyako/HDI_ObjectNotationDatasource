@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/TableForms" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="TableForms_TitlePerson" resname="TableForms_TitlePerson">
+		<source>Person</source>
+		<target>Person</target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_TitleSample" resname="TableForms_TitleSample">
+		<source>Sample</source>
+		<target>Sample</target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelID" resname="TableForms_LabelID">
+		<source>ID : </source>
+		<target>ID : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelOBField" resname="TableForms_LabelOBField">
+		<source>OB_Field : </source>
+		<target>OB_Field : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelFirstname" resname="TableForms_LabelFirstname">
+		<source>Firstname : </source>
+		<target>Firstname : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelLastname" resname="TableForms_LabelLastname">
+		<source>Lastname : </source>
+		<target>Lastname : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelAge" resname="TableForms_LabelAge">
+		<source>Age : </source>
+		<target>Age : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelCity" resname="TableForms_LabelCity">
+		<source>City : </source>
+		<target>City : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelRegisterDate" resname="TableForms_LabelRegisterDate">
+		<source>RegisterDate : </source>
+		<target>RegisterDate : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelCategory" resname="TableForms_LabelCategory">
+		<source>Category : </source>
+		<target>Category : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelTitle" resname="TableForms_LabelTitle">
+		<source>Title : </source>
+		<target>Title : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelText" resname="TableForms_LabelText">
+		<source>Text : </source>
+		<target>Text : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_LabelSampleSort" resname="TableForms_LabelSampleSort">
+		<source>SampleSort : </source>
+		<target>SampleSort : </target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

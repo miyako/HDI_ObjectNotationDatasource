@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_ObjectNotationDatasource" uuid="F1E9345D6E5941CBAD0BE4A19A53BABC" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Person" uuid="39413494A1A14ED2BCC628ACF9FAFFC2" id="1">
+		<field name="ID" uuid="71CB041C551A4D1DB1F9A67B1B9157B2" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="OB_Field" uuid="D1F474F7D90E48DD85BA42AD60DAE739" type="21" never_null="true" id="2"/>
+		<field name="Category" uuid="118653F55EE94F6DAB2D19FC5D281444" type="10" limiting_length="255" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="71CB041C551A4D1DB1F9A67B1B9157B2"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<table name="Samples" uuid="C164838069754C9DB03F9522F3D94691" id="2">
+		<field name="ID" uuid="B1D6EF40D96141DC94132203DA36CFB5" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="A25D86C3CF7F40478668350CF0FB595B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Text" uuid="E9ABDCE3B0634535AC1201E4E289FA01" type="10" never_null="true" id="3"/>
+		<field name="SampleSort" uuid="EC48554CABF14ECAAB59C3EF3A36101A" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="B1D6EF40D96141DC94132203DA36CFB5"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="5531F6574DFA496F9A4FBFAA3F7E3022" type="7">
+		<field_ref uuid="71CB041C551A4D1DB1F9A67B1B9157B2" name="ID">
+			<table_ref uuid="39413494A1A14ED2BCC628ACF9FAFFC2" name="Person"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B7BBCBAEE1E147C6A53E453F25C33D12" type="7">
+		<field_ref uuid="B1D6EF40D96141DC94132203DA36CFB5" name="ID">
+			<table_ref uuid="C164838069754C9DB03F9522F3D94691" name="Samples"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_ObjectNotationDatasource" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
